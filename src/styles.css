@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+main {
+  padding: 1rem;
+}
+
+header {
+  height: 3rem;
+  padding: 0 0.5rem;
+  background-color: dodgerblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu .nav__list {
+  position: fixed;
+  top: 2rem;
+  left: 0;
+  bottom: 0;
+  background-color: green;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transform: translateX(-100%);
+  padding: 1rem;
+  list-style: none;
+  height: 100px;
+}
+
+.menu.visible .nav__list {
+  transform: translateX(0);
+}
